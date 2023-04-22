@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/67375c2bd3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo22.jpeg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="headertext">
+            <p> <span>I'm Data Analyst</span> </p>
+            <h1>Hi, I'm <span> Yash </span> Dubey</h1>
+        </div>
+    </div>
+    </div> 
+<!-- --------------------ABOUT SECTION--------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="aboutcol1">
+                    <img src="Images/About.jpeg">
+                </div>
+                <div class="aboutcol2">
+                    <h1 class="sub">About Me</h1>
+                    <p>Hello folks,myself Yash Dubey & I'm currently pursuing B.E. in Computer Science from Thakur College of Engineering and Technology. My areas of interest include Front-End web development & Data Science.Currently working on mini-projects from these 2 domains and looking forward to build a career in these two respectively</p>
+
+                    <div class="tabtittles">
+                        <p class="tababout active" onclick="opentab('skills')">Skills</p>
+                        <p class="tababout" onclick="opentab('experience')">Experience</p>
+                        <p class="tababout" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tabcontents tabactive" id="skills">
+                        <ul>
+                            <li><span>Data Analyst</span><br>Python <br>Visualization <br>Machine Learning Models <br>SQL</li>
+                            <li><span>Web Developer</span><br>HTML <br>CSS <br>Java Script <br>React</li>
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="experience">
+                        <ul>
+                            <li><span>Data Analyst</span><br>Performing various kinds of Projects using ML Models</li>
+                            <li><span>Web Developer</span><br>Building Web Pages using HTML CSS JS & REACT</li>
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="education">
+                        <ul>
+                            <li><span>2018-20</span><br>Ryan International School</li>
+                            <li><span>2020-24</span><br>Thakur College of Engineering & Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -------------------SERVICES SECTION--------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub">My Services</h1>
+            <div class="serviceslist">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>As a skilled web developer, I have a passion for creating innovative and engaging websites that are both visually appealing and highly functional. With years of experience in the field, I possess a strong understanding of web development technologies and programming languages, as well as a keen eye for design and user experience.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Data Analyst</h2>
+                    <p>I have extensive experience with a variety of data analyst tools. I know how to use SQL Developer and Oracle DBMS to manage and edit databases. I use KNIME to analyze data sets, create data flows, and inspect results. I've also used Zoho Analytics for reporting</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Software Developer</h2>
+                    <p>Software developers are highly skilled professionals who design, develop, test, and maintain software applications. They are the backbone of the technology industry, creating the innovative solutions that power everything from smartphones and social media platforms to financial systems and healthcare applications.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+            </div>
+        </div>
+<!-- ----------------PORTFOLIO-------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="Images/work-1.png">
+                    <div class="layer">
+                        <h3>Watch E-Commerce Website</h3>
+                        <p>In this project I created a Watch E-Commerce website using Web Development</p>
+                        <a href="https://github.com/yashdubey20/Watch-E-Commerce-Website"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-2.png">
+                    <div class="layer">
+                        <h3>Weather Website</h3>
+                        <p>In this project I created a Weather API website using Web Development</p>
+                        <a href="https://github.com/yashdubey20/Weather-Website-API"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-3.png">
+                    <div class="layer">
+                        <h3>Fake News Detection</h3>
+                        <p>In this project I created a Machine Learning Model for Fake News Detection</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="button">See More</a>
+        </div>
+    </div>
+
+    <!-- ----------------CONTACT US---------------- -->
+    
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contactleft">
+                    <h1 class="sub">Contact Me</h1>
+                    <p> <i class="fa-solid fa-envelope"></i> yashdubey20@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> +91 7506703222</p>
+                    <div class="socialicons">
+                        <a href="https://github.com/yashdubey20"><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/yash-dubey-9ab79b264/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Images/Yash Dubey-Resume.pdf" download class="button button2">Download Resume</a>
+                </div>
+                <div class="contactright">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="button button2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Yash Dubey.</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tababout = document.getElementsByClassName("tababout")
+        var tabcontents = document.getElementsByClassName("tabcontents")
+
+        function opentab(tabname) {
+            for(tababt of tababout) {
+                tababt.classList.remove("active");
+            }
+
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("tabactive");
+            }
+            event.currentTarget.classList.add("active");
+            document.getElementById(tabname).classList.add("tabactive");
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        
+        function openmenu (){
+        sidemeu.style.right = "0";
+        }
+        
+        function closemenu (){
+        sidemeu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzVwSnEXo6MiAjcaTNUT6iqEPd2YOYtTBOARZgLtaqJhZr9pOKHF0cfoTFp_gLQHtpqvw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
